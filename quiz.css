@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* Light teal background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.quiz-container {
+  background-color: #ffffff; /* White background for the quiz box */
+  border: 2px solid #b0bec5; /* Light grey border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+
+#quiz {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #37474f; /* Dark grey text color for the question */
+}
+
+#options {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#options li {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #e3f2fd; /* Light blue background for options */
+  color: #1e88e5; /* Blue text for options */
+  cursor: pointer;
+  border: 1px solid #90caf9; /* Light blue border */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#options li:hover {
+  background-color: #bbdefb; /* Slightly darker blue on hover */
+  transform: scale(1.03); /* Slight scaling effect on hover */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50; /* Green button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+button:disabled {
+  background-color: #ddd; /* Greyed out button when disabled */
+}
+
+progress {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#quiz-end {
+  text-align: center;
+}
+
+#quiz-end button {
+  background-color: #f44336; /* Red button background for quiz end */
+}
+
+#quiz-end button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
